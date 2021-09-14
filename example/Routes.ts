@@ -1,5 +1,5 @@
 const Routes: {[key: string]: string} = {
-  home: '/',
+  home: 'Home',
 };
 
 export default Routes;

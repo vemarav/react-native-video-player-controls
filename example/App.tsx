@@ -9,13 +9,15 @@ import Home from './Home';
 const Stack = createStackNavigator();
 
 const App = (): JSX.Element => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name={Routes.home} component={Home} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name={Routes.home} options={{header: () => null}}>
+                    {props => <Home {...props} />}
+                </Stack.Screen>
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 };
 
 export default App;

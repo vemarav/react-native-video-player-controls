@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vemarav/react-native-avatar-crop.git"
+    "url": "react-native-video-ui-controls"
   },
   "author": {
     "name": "Aravind Vemula",
@@ -49,7 +49,7 @@
     "avatar"
   ],
   "bugs": {
-    "url": "https://github.com/ggunti/react-native-avatar-crop/issues"
+    "url": "https://github.com/vemarav/react-native-video-ui-controls/issues"
   },
-  "homepage": "https://github.com/vemarav/react-native-avatar-crop"
+  "homepage": "https://github.com/vemarav/react-native-video-ui-controls"
 }
