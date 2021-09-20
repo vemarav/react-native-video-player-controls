@@ -1,7 +1,7 @@
 {
   "name": "react-native-video-ui-controls",
-  "version": "0.0.1",
-  "description": "Crop component to crop profile images",
+  "version": "0.0.3",
+  "description": "Video Player",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -19,6 +19,10 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@react-native-community/slider": "*",
+    "react-native-orientation": "*",
+    "react-native-svg": "*",
+    "react-native-video": "*"
   },
   "peerDependencies": {
     "react": "*",
@@ -27,6 +31,9 @@
   "devDependencies": {
     "@types/react": "^17.0.15",
     "@types/react-native": "^0.64.12",
+    "@types/react-native-orientation": "^5.0.1",
+    "@types/react-native-video": "^5.0.9",
+    "prettier": "^2.4.1",
     "typescript": "^4.3.5"
   },
   "jest": {
@@ -41,12 +48,11 @@
     ]
   },
   "keywords": [
-    "react-native",
-    "react",
-    "crop",
-    "image",
-    "cropper",
-    "avatar"
+    "react-native-video",
+    "react-native-video-controls",
+    "react-native-video-ui-controls",
+    "video",
+    "video-controls"
   ],
   "bugs": {
     "url": "https://github.com/vemarav/react-native-video-ui-controls/issues"

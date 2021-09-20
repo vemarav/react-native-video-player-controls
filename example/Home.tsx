@@ -1,81 +1,39 @@
-import React, {useState} from 'react';
-import {StyleSheet, View, TouchableWithoutFeedback, Alert} from 'react-native';
-import Video from 'react-native-video';
+import React from 'react';
+import { View,Text,TouchableOpacity, StyleSheet} from 'react-native';
+import Routes from './Routes';
 
 const component = (props: any) => {
-    const [controls, setControls] = useState(true);
-
-    // https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4
     return (
-        <View style={{flex: 1}}>
-            <Video
-                style={{
-                    flex: 1,
-                    backgroundColor: '#000000',
-                }}
-                resizeMode={'contain'}
-                fullscreen
-                fullscreenAutorotate
-                fullscreenOrientation={'landscape'}
-                source={{
-                    uri: 'https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4',
-                }}
-                onError={console.error}
-            />
-            <TouchableWithoutFeedback
-                style={{
-                    ...StyleSheet.absoluteFillObject,
-                    position: 'absolute',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}
-                onPress={() => setControls(!controls)}>
-                <View
-                    style={{
-                        ...StyleSheet.absoluteFillObject,
-                        position: 'absolute',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                    }}>
-                    {controls ? (
-                        <>
-                            <View
-                                style={{
-                                    ...StyleSheet.absoluteFillObject,
-                                    justifyContent: 'flex-start',
-                                }}>
-                                <View
-                                    style={{
-                                        height: 50,
-                                        backgroundColor: 'red',
-                                    }}
-                                />
-                            </View>
-                            <View
-                                style={{
-                                    width: 50,
-                                    height: 50,
-                                    backgroundColor: '#ffffff40',
-                                }}
-                            />
-                            <View
-                                style={{
-                                    ...StyleSheet.absoluteFillObject,
-                                    justifyContent: 'flex-end',
-                                }}>
-                                <View
-                                    style={{
-                                        height: 100,
-                                        backgroundColor: 'blue',
-                                    }}
-                                />
-                            </View>
-                        </>
-                    ) : null}
-                </View>
-            </TouchableWithoutFeedback>
+        <View style={styles.container}>
+            <TouchableOpacity style={styles.item} onPress={() => {
+                props.navigation.navigate(Routes.video, {name: 'Earth Rotation Video', source: require('./assets/video.mp4')})
+            }}>
+                <Text style={styles.text}>
+                    Earth Video
+                </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.item} onPress={() => {
+                props.navigation.navigate(Routes.video, {name: 'WebRTC on Android using react-native', source: require('./assets/video2.mp4')})
+            }}>
+                <Text style={styles.text}>
+                    WebRTC on Android using react-native
+                </Text>
+            </TouchableOpacity>
         </View>
     );
-};
+}
 
 export default component;
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    item: {
+        padding: 20,
+    },
+    text: {
+        color: '#000000',
+        fontSize: 14,
+    }
+});

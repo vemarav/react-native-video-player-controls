@@ -60,3 +60,6 @@ buck-out/
 
 # package
 /src/
+
+# assets
+/assets/*.mp4
