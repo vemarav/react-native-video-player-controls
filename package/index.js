@@ -1,3 +1,3 @@
-import { View } from 'react-native';
+import Video from './src';
 
-export default View;
+export default Video;

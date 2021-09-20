@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
-import {View, SafeAreaView} from 'react-native';
+import React from 'react';
+import {Platform, View} from 'react-native';
 import Video from './src';
 
 const component = (props: any) => {
     const {name, source} = props.route.params;
-    const [fullscreen, setFullscreen] = useState(false);
 
     const video = (
         <Video
@@ -13,6 +12,7 @@ const component = (props: any) => {
             onBackPress={() => {
                 props.navigation.goBack();
             }}
+            isFullscreen={Platform.OS === 'ios'}
         />
     );
 
