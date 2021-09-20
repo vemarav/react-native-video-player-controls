@@ -1,6 +1,6 @@
 import React from 'react';
 import {Platform, View} from 'react-native';
-import Video from './src';
+import Video from 'react-native-video-ui-controls';
 
 const component = (props: any) => {
     const {name, source} = props.route.params;

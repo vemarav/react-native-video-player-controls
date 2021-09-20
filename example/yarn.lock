@@ -5801,10 +5801,10 @@ react-native-svg@*, react-native-svg@^12.1.1:
     css-select "^2.1.0"
     css-tree "^1.0.0-alpha.39"
 
-react-native-video-ui-controls@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-native-video-ui-controls/-/react-native-video-ui-controls-0.0.3.tgz#003b47f756769c66a368f955190429bd65f2dba2"
-  integrity sha512-njQRbCIlpzMjDzBJInrkD3iSPVi36h+9Zp0mjObN8/Gz3V0FreR1lSxCWLw2IlmaPqF6n7cy0Xt6knpAsfocPg==
+react-native-video-ui-controls@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-video-ui-controls/-/react-native-video-ui-controls-0.0.4.tgz#819ff8256575791c68b3da4fff10410d521623bd"
+  integrity sha512-8UGBNu+Hs09Op6m2knIbiw8dv+w4NEDVUba9luQo2hy4CkqXRGSTq/Hk4/7R3gV/2nb/XjTXGBJRuEGoKEQj5w==
   dependencies:
     "@react-native-community/slider" "*"
     react-native-orientation "*"
