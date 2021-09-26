@@ -1178,7 +1178,7 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.11.tgz#2f4c6e10bee0786abff4604e39a37ded6f3980ce"
   integrity sha512-rQfMIGSR/1r/SyN87+VD8xHHzDYeHaJq6elOSCAD+0iLagXkSI2pfA0LmSXP21uw5i3em7GkkRjfJ8wpqWXZNw==
 
-"@react-native-community/slider@*", "@react-native-community/slider@^4.1.7":
+"@react-native-community/slider@^4.1.7":
   version "4.1.7"
   resolved "https://registry.yarnpkg.com/@react-native-community/slider/-/slider-4.1.7.tgz#b2c4e9547dcdcbcf3d0a0cda8545abcfdc089859"
   integrity sha512-zVcxi3chX/Je/3lo8jI/83VpY6DL2h+JWNV8sg6rkxjRTau/8DfM/e98RymH0ujejBkuYX342IKNnxOHRK6KbQ==
@@ -5766,7 +5766,7 @@ react-native-iphone-x-helper@^1.3.0:
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
 
-react-native-orientation@*, react-native-orientation@^3.1.3:
+react-native-orientation@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/react-native-orientation/-/react-native-orientation-3.1.3.tgz#d45803841fe94b6cce9acbe904fd5ca191a3711e"
   integrity sha512-A0h0E+2f95X4avmhaBG1ZT8WDxBACA/q//JN2eF1E7kq8AJVxt5XDiavv+aSBkBlqFsfF3bIS+T/DB5mXmnxuA==
@@ -5793,7 +5793,7 @@ react-native-screens@^3.4.0:
   dependencies:
     warn-once "^0.1.0"
 
-react-native-svg@*, react-native-svg@^12.1.1:
+react-native-svg@^12.1.1:
   version "12.1.1"
   resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-12.1.1.tgz#5f292410b8bcc07bbc52b2da7ceb22caf5bcaaee"
   integrity sha512-NIAJ8jCnXGCqGWXkkJ1GTzO4a3Md5at5sagYV8Vh4MXYnL4z5Rh428Wahjhh+LIjx40EE5xM5YtwyJBqOIba2Q==
@@ -5801,17 +5801,12 @@ react-native-svg@*, react-native-svg@^12.1.1:
     css-select "^2.1.0"
     css-tree "^1.0.0-alpha.39"
 
-react-native-video-ui-controls@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-native-video-ui-controls/-/react-native-video-ui-controls-0.0.4.tgz#819ff8256575791c68b3da4fff10410d521623bd"
-  integrity sha512-8UGBNu+Hs09Op6m2knIbiw8dv+w4NEDVUba9luQo2hy4CkqXRGSTq/Hk4/7R3gV/2nb/XjTXGBJRuEGoKEQj5w==
-  dependencies:
-    "@react-native-community/slider" "*"
-    react-native-orientation "*"
-    react-native-svg "*"
-    react-native-video "*"
+react-native-video-ui-controls@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-video-ui-controls/-/react-native-video-ui-controls-0.0.6.tgz#54e99d56cc82c66c7186b90cce663d4e459f7275"
+  integrity sha512-fabyZsnuLULEwfxVUEyOBquV9wXAs+jCMLWG8FGO1cNwnK3+k6qis4iYrlUFTOwHAYkD1/JwRM64KwCEMYE3Uw==
 
-react-native-video@*, react-native-video@^5.1.1:
+react-native-video@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-5.1.1.tgz#89a7989efeb8d404611c06154d1da227a745d7d8"
   integrity sha512-zee8gRUrjPWRoZSEBiMebClqu1iAuCQNLjzqpmXFrRWEoJj7azM3BPqLQWJgsnfLiYUYGySeApC/G60THM5+tw==

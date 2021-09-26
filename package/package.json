@@ -1,6 +1,6 @@
 {
   "name": "react-native-video-ui-controls",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Video Player",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,15 +18,13 @@
     "email": "vemarav@outlook.in"
   },
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
     "@react-native-community/slider": "*",
     "react-native-orientation": "*",
     "react-native-svg": "*",
     "react-native-video": "*"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
   },
   "devDependencies": {
     "@types/react": "^17.0.15",
